@@ -66,21 +66,21 @@ a{
   border: 3px dashed #417243;
 }
 
-
 td{
   text-align: center;
   border-top: 2px solid #000000;
   padding: 10px;
 }
 
-
 .colhead{
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
   text-transform: uppercase;
-  vertical-align: center;
   background-color: #7e0825;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rowhead{
@@ -92,7 +92,7 @@ table{
   margin-left: auto;
   margin-right: auto;
   border: 5px solid #000000;
-  border-radius: 50px; /*Work on this*/
+  border-radius: 50px; 
 }
 
 /* I gave you the selector, but not the property-value pair. 
@@ -113,7 +113,6 @@ tbody tr:last-child th{
 tbody tr:last-child td:last-child{
   border-radius: 0 0 50px 0;
 }
-
 
 tr:nth-of-type(even){
   background-color: #D1D1D1;
@@ -136,5 +135,4 @@ footer{
   position: fixed; 
   bottom: 0;
   left: 0;
-  /* display: block; */
 }
