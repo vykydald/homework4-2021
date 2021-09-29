@@ -79,7 +79,7 @@ td{
   min-width: 125px;
   padding: 10px;
   text-transform: uppercase;
-  text-align: center;
+  vertical-align: center;
   background-color: #7e0825;
 }
 
@@ -97,9 +97,23 @@ table{
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 50px 0 0 0;
+}
 
 /*Add selectors and rules here*/
+thead tr:first-child th:last-child{
+  border-radius: 0 50px 0 0 ;
+}
+
+tbody tr:last-child th{
+  border-radius: 0 0 0 50px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0 0 50px 0;
+}
+
 
 tr:nth-of-type(even){
   background-color: #D1D1D1;
@@ -113,14 +127,14 @@ tr:hover{
   background-color: rgba(126, 8, 37, 0.25);
 }
 
-/* What to do about margin of main??? */
-
 footer{
   width:100%;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  position: absolute; /*Not sure about this?*/
-  display: block; /*Not sure about this?*/
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  /* display: block; */
 }
