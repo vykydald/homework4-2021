@@ -78,9 +78,8 @@ td{
   padding: 10px;
   text-transform: uppercase;
   background-color: #7e0825;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .rowhead{
